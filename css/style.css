@@ -97,6 +97,12 @@ a {
     width: 65%;
 }
 
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
