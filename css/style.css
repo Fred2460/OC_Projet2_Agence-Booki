@@ -18,6 +18,27 @@ body {
     justify-content: center;
 }
 
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 50px 0 20px;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
