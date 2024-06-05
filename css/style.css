@@ -37,6 +37,8 @@ nav ul {
 
 nav li {
     margin: 0 50px 0 20px;
+    text-decoration: underline;
+    color: #0065FC;
 }
 
 .main-container {
