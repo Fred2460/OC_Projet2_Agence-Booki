@@ -59,11 +59,6 @@ a {
     text-decoration: none;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
 .card {
     background-color: white;
     border-radius: 20px;
@@ -85,6 +80,54 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** Infogroup (headline + filterbar + searchbar + infobar ***********/
+.infogroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 30px;
+/*    background-color: var(--main-bg-color);   */
+    gap: 35px;
+    box-sizing: border-box;
+}
+
+.headline {
+    padding: 8px;
+}
+.infogroup-title h2 {
+    margin: 0;
+    font-size: 22px;
+    gap: 50px;
+}
+
+/*   ne s'applique pas !... */
+.infogroup-title h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.searchbar section {
+    display: flex;
+    flex-direction: row;
+/*    border: brown;
+    width: Fixed (377px)px;
+    height: Fixed (49px)px;
+    gap: 10px;
+    border-radius: 15px 0px 0px 0px; 
+    border: 1px 0px 0px 0px; */
+}
+
+.searchbar button {
+    font-size: 18px;
+    color: #F2F2F2;
+    background-color: #0065FC;
+    padding: 15px 16px 15px 16px;
+    border-radius: 0px, 15px, 15px, 0px;
+    gap: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
