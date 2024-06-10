@@ -37,7 +37,13 @@ nav ul {
 
 nav li {
     margin: 0 50px 0 20px;
-    text-decoration: underline;
+    /* padding-top: 16px; */
+}
+
+nav li :hover {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 2px #0065FC solid;
     color: #0065FC;
 }
 
