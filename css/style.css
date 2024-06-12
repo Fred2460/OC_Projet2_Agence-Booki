@@ -160,6 +160,8 @@ input {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     /*margin-bottom: 10px;*/
     gap: 20px;
     box-sizing: border-box;
@@ -174,9 +176,42 @@ input {
     border-radius: 25px;
     border: 2px var(--main-bg-color) solid;
     padding: 0px 19px 0px 19px;
-    margin-top: 30px;
-    margin-bottom: 30px;
     gap: 10px;
+}
+
+.filtre p {
+    margin: 15px 0;
+}
+
+.filterbar :hover {
+    background-color: var(--filter-bg-color);
+}
+
+/****** Infobar (icone + texte) ***********/
+
+.infobar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 17px;
+    width: 100%;
+    margin-bottom: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.infobar img {
+    border-radius: 25px;
+    border: 2px var(--main-bg-color) solid;
+    padding: 5px 10px 5px 10px;
+    gap: 10px;
+}
+
+.infobar h3 {
+    /*margin: 0;*/
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /****** Hebergements And Populaires ***********/
