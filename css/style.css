@@ -18,33 +18,7 @@ body {
     justify-content: center;
 }
 
-/* Header */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav img {
-    height: 20px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav li {
-    margin: 0 50px 0 20px;
-}
-
-nav li :hover {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border-top: 2px #0065FC solid;
-    color: #0065FC;
-}
+/* main container */
 
 .main-container {
     width: 100%;
@@ -79,6 +53,34 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 50px 0 20px;
+}
+
+nav li :hover {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
 }
 
 /****** Infogroup (headline + filterbar + searchbar + infobar ***********/
@@ -131,7 +133,7 @@ input {
     padding: 0px 20px 0px 20px;
 }
 
-/* image loupe pour version desktop */
+/* bouton "Rechercher" pour version desktop */
 .searchbar button {
     font-size: 18px;
     font-weight: 700;
@@ -159,14 +161,22 @@ input {
     align-items: center;
     width: 100%;
     margin-top: 10px;
-    gap: 20px;
     box-sizing: border-box;
+}
+
+.filterbar h3 {
+    font-size: 21px;
+    padding: 0px 19px 0px 19px;
 }
 
 .filtre {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    margin: 0;
+    gap: 20px;
+}
+
+.filtre article {
+    display: flex;
     align-items: center;
     font-size: 17px;
     border-radius: 25px;
@@ -179,7 +189,7 @@ input {
     margin: 15px 0;
 }
 
-.filterbar :hover {
+.filtre :hover {
     background-color: var(--filter-bg-color);
 }
 
