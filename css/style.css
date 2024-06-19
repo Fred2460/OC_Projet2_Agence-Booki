@@ -109,11 +109,12 @@ nav li :hover {
     align-items: center;
 }
 
-.vector_loc_img {
+.searchbar i {
     background-color: var(--main-bg-color);
-    padding: 20px 20px 20px 20px;
+    padding: 28px;
     border-radius: 15px 0px 0px 15px;
     border: 1px;
+    color: black;
 }
 
 .formulaire {
@@ -186,7 +187,7 @@ input {
 }
 
 .filtre p {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .filtre :hover {
@@ -207,10 +208,10 @@ input {
     box-sizing: border-box;
 }
 
-.infobar img {
+.infobar i {
     border-radius: 25px;
     border: 2px var(--main-bg-color) solid;
-    padding: 5px 10px 5px 10px;
+    padding: 11px 10px 13px 10px;
 }
 
 .infobar h3 {
