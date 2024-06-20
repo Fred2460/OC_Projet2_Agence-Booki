@@ -255,7 +255,7 @@ input {
 }
 
 .hebergements-cards .card {
-    width: 250px;
+    width: 250px; /* à voir pour mettre en % pour le responsive */
     margin-top: 10px;
     margin-bottom: 10px;
 }
