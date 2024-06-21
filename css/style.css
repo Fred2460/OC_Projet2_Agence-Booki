@@ -351,7 +351,6 @@ input {
 
 .activites-title h2 {
     font-size: 22px;
-    /*margin-bottom: 5px;*/
 }
 
 .activites-cards {
@@ -374,6 +373,25 @@ input {
 
 .activites-cards .card-title {
     margin: 15px;
+}
+
+/****** footer ***********/
+footer {
+    display: flex;
+    background-color: var(--main-bg-color);
+    margin-top: 30px;
+    padding: 30px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+
+footer .footer-title {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
