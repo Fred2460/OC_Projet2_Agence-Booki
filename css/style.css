@@ -144,14 +144,22 @@ input {
     border: 1px;
     padding: 18px 15px 18px 15px;
     border-radius: 0px 15px 15px 0px;
+    display: block;
 }
+
 /* image loupe pour version mobile*/
-/*.vector_search_img {
+#m-glass {
+    font-size: 18px;
+    font-weight: 700;
+    color: #F2F2F2;
     background-color: var(--main-color);
     padding: 2px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 4px 4px 0px #00000040;
-}*/
+    padding: 18px;
+    border: 1px;
+    display: none;
+}
 
 /****** Filterbar (Titre + 4 filtres) ***********/
 
@@ -172,6 +180,7 @@ input {
 
 .filtre {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     gap: 20px;
 }
@@ -434,4 +443,37 @@ footer .footer-title {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .searchbar button {
+        display: none;
+    }
+    #m-glass {
+        display: block;
+    }
+
+    .activites-cards img {
+        height: 141px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div {
+        margin-bottom: 30px;
+        width: 100%;
+    }
 }
+
+
+
+
