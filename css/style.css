@@ -79,8 +79,8 @@ nav li {
 nav li :hover {
     padding-top: 16px;
     padding-bottom: 16px;
-    border-top: 2px #0065FC solid;
-    color: #0065FC;
+    border-top: 2px var(--main-color) solid;
+    color: var(--main-color);
 }
 
 /****** Infogroup (headline + filterbar + searchbar + infobar ***********/
@@ -127,10 +127,7 @@ nav li :hover {
 input {
     font-size: 18px;
     border: 0px;
-    /* image loupe pour version desktop */
     width: 164px;
-    /* image loupe pour version mobile
-    width: 220px; */
     padding: 0px 20px 0px 20px;
 }
 
@@ -308,9 +305,6 @@ input {
 }
 
 .populaires-title h2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 22px;
     margin-top: 0;
     margin-bottom: 15px;
@@ -364,6 +358,8 @@ input {
 .activites-cards {
     display: flex;
     flex-direction: row;
+/*    justify-content: space-between;*/
+    justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
 }
@@ -413,6 +409,10 @@ footer .footer-title {
         flex-direction: column;
         align-items: flex-start;
         gap: 0px;
+    }
+
+    .filtre article {
+        font-size: 16px;
     }
 
     /* hébergements et populaires cards en colonne */
@@ -467,12 +467,32 @@ footer .footer-title {
     
     nav img {
         height: 20px;
-        margin-bottom: 20px;
+        padding: 30px;
     }
     
-    nav li :hover {
-        border-bottom: 2px #0065FC solid;
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+    
+    nav li {
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px var(--main-bg-color) solid;
         border-top: 0;
+        width: 50%;
+        margin: 0 0 50px 0;
+        padding-bottom: 20px;
+    }
+
+    nav li :hover {
+        border-bottom: 2px var(--main-color) solid;
+        border-top: 0;
+        color: var(--main-color);
     }
 
     /* bouton search remplacé par icône m-glass */
@@ -489,21 +509,29 @@ footer .footer-title {
         margin-left: -20px;
     }
 
+    /* réduction police des boutons de filtre */
+    .filtre article {
+        font-size: 14px;
+        width: 140px;
+    }
+
+    /* mise populaires avant hébergements */ 
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
     }
+    
+    .populaires {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
 
+    /* modification format conteners */
     .hebergements {
         background-color: white;
         border-radius: 0px;
         padding: 0px;
         box-sizing: border-box;
-    }
-
-    .populaires {
-        margin-top: 0;
-        margin-bottom: 20px;
     }
 
     .activites-cards img {
