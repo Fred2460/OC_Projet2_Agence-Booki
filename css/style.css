@@ -73,15 +73,30 @@ nav ul {
 }
 
 nav li {
+    width: 100%;
+}
+
+.text-menu {
     margin: 0 50px 0 20px;
 }
 
-nav li :hover {
+.text-menu:hover {
     padding-top: 16px;
     padding-bottom: 16px;
     border-top: 2px var(--main-color) solid;
     color: var(--main-color);
 }
+
+.button-menu {
+    display: none;
+    box-shadow: none;
+}
+
+.button-menu :hover {
+    display: none;
+    box-shadow: none;
+}
+
 
 /****** Infogroup (headline + filterbar + searchbar + infobar ***********/
 .infogroup {
@@ -89,7 +104,7 @@ nav li :hover {
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     gap: 10px;
     box-sizing: border-box;
 }
@@ -105,7 +120,6 @@ nav li :hover {
 
 .searchbar {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -131,20 +145,18 @@ input {
     padding: 0px 20px 0px 20px;
 }
 
-/* bouton "Rechercher" pour version desktop */
+/* bouton "Rechercher" pour version desktop et tablette */
 .searchbar button {
     font-size: 18px;
     font-weight: 700;
     color: #F2F2F2;
     background-color: var(--main-color);
-    align-items: center;
     border: 1px;
     padding: 18px 15px 18px 15px;
     border-radius: 0px 15px 15px 0px;
-    display: block;
 }
 
-/* image loupe pour version mobile*/
+/* image loupe pour version mobile */
 #m-glass {
     font-size: 18px;
     font-weight: 700;
@@ -162,10 +174,7 @@ input {
 
 .filterbar {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    width: 100%;
     margin-top: 10px;
     gap: 15px;
     box-sizing: border-box;
@@ -186,6 +195,7 @@ input {
     display: flex;
     align-items: center;
     font-size: 17px;
+    font-weight: 700;
     border-radius: 25px;
     border: 2px var(--main-bg-color) solid;
     padding: 0px 19px 0px 19px;
@@ -358,7 +368,6 @@ input {
 .activites-cards {
     display: flex;
     flex-direction: row;
-/*    justify-content: space-between;*/
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
@@ -450,8 +459,8 @@ footer .footer-title {
     }
 }
 
-/***** Small devices (phones, less than 768px) *****/
-@media (max-width: 767.98px) {
+/***** Small devices (phones, less than 768px et more than 320px) *****/
+@media (max-width: 767.98px) and (min-width: 320px) {
     /* réduction du padding droite & gauche du main container */
     .main-container {
         padding: 0;
@@ -461,8 +470,6 @@ footer .footer-title {
     nav {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
     }
     
     nav img {
@@ -471,28 +478,40 @@ footer .footer-title {
     }
     
     nav ul {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0;
+        padding: 0;
         width: 100%;
-        padding: 0 0 20px 0;
     }
     
-    nav li {
-        display: flex;
-        justify-content: center;
-        border-bottom: 2px var(--main-bg-color) solid;
-        border-top: 0;
-        width: 50%;
-        margin: 0 0 50px 0;
-        padding-bottom: 20px;
+    .text-menu {
+        display: none;
     }
 
-    nav li :hover {
-        border-bottom: 2px var(--main-color) solid;
-        border-top: 0;
+    .text-menu:hover {
+        display: none;
+    }
+
+    .button-menu {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        padding-bottom: 16px;
+        background-color: white;
+        border: 2px white solid;
+        border-bottom: 2px var(--main-bg-color) solid;
+        width: 100%;
+    }
+
+    .button-menu:hover {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 16px;
         color: var(--main-color);
+        border: 2px white solid;
+        border-bottom: 2px var(--main-color) solid;
+        width: 100%;
     }
 
     /* bouton search remplacé par icône m-glass */
@@ -534,6 +553,10 @@ footer .footer-title {
         box-sizing: border-box;
     }
 
+    .hebergements-cards .card {
+        width: 320px;
+    }
+
     .activites-cards img {
         display: flex;
         flex-direction: column;
@@ -545,14 +568,22 @@ footer .footer-title {
         justify-content: center;
     }
 
-    /* populaires - format large, en colonne */
-    .populaires-cards a {
-        width: 100%;
+    .activites-cards .card {
+        width: 320px;
     }
 
-    .populaires-cards {
+    /* populaires - format large, en colonne */
+   .populaires-cards {
         display: flex;
         flex-direction: column;
+    }
+
+    .populaires-cards a {
+        display: flex;
+        /*justify-content: space-around;*/
+        justify-content: center;
+        width: 320px;
+        padding-left: 0;
     }
 
     /* footer en colonne */
