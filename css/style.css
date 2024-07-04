@@ -70,14 +70,11 @@ nav img {
 nav ul {
     display: flex;
     list-style: none;
+    gap: 70px;
 }
 
 nav li {
     width: 100%;
-}
-
-.text-menu {
-    margin: 0 50px 0 20px;
 }
 
 .text-menu:hover {
@@ -381,14 +378,18 @@ input {
 footer {
     display: flex;
     background-color: var(--main-bg-color);
-    margin-top: 30px;
-    padding: 30px;
+    /*margin-top: 20px;*/
+    padding: 5px 20px 5px 20px;
 }
 
 footer div {
     display: flex;
     flex-direction: column;
-    width: 34%;
+    width: 33%;
+}
+
+footer .footer-subtitle {
+    margin-bottom: 20px;
 }
 
 footer .footer-title {
@@ -574,7 +575,7 @@ footer .footer-title {
     }
 
     footer div {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         width: 100%;
     }
 }
