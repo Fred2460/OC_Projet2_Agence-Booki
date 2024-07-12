@@ -183,7 +183,7 @@ input {
     font-weight: 700;
     border-radius: 25px;
     border: 2px var(--main-bg-color) solid;
-    padding: 0px 19px 0px 19px;
+    padding: 0px 15px 0px 15px;
     gap: 15px;
 }
 
@@ -504,7 +504,7 @@ footer .footer-title {
     }
     
     input {
-        width: 195px;
+        width: 160px;
     }
 
     #m-glass {
@@ -513,9 +513,17 @@ footer .footer-title {
     }
 
     /* réduction police des boutons de filtre */
+    .filtre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        /*width: 100%;             répartition des 2 filtres sur toute la largeur de l'écran mobile */ 
+    }
+
     .filtre article {
         font-size: 14px;
-        width: 140px;
+        width: 110px;
+        gap: 10px;
     }
 
     /* mise populaires avant hébergements */ 
