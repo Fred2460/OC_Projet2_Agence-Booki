@@ -224,6 +224,7 @@ input {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hebergements-and-populaires section {
@@ -236,8 +237,12 @@ input {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    /*padding: 30px;*/
-    /*gap: 30px;*/
+    padding: 30px;
+    gap: 30px;
+}
+
+.hebergements a {
+    height: 210px;
 }
 
 .hebergements-title h2 {
@@ -246,26 +251,26 @@ input {
     align-items: center;
     font-size: 22px;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .hebergements-cards {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
     /*flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;*/
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .hebergements-cards .card {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 100%;
 }
 
 .hebergements-cards img {
-    height: 124px;
+    height: 50%;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -276,8 +281,10 @@ input {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 100%;
+    height: 50%;
+    margin-left: 4px;
+    margin-right: 0px;
     padding-bottom: 10px;
     gap: 8px;
 }
@@ -285,6 +292,7 @@ input {
 .hebergements-cards .card-title {
     margin-top: 5px;
     margin-bottom: 4px;
+    /*font-size: 16px;            ********** font-size de la maquette Figma  ************/
 }
 
 .hebergements-cards .card-subtitle {
@@ -350,7 +358,6 @@ input {
 /****** Activités ***********/
 .activites {
     padding: 30px;
-    margin-top: 20px;
 }
 
 .activites-title h2 {
@@ -360,24 +367,28 @@ input {
 .activites-cards {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.activites-cards a {
+    width: 25%;
 }
 
 .activites-cards .card {
-    width: 300px;
     padding: 0 0 5px 0;
+    height: 270px;
 }
 
 .activites-cards img {
     border-radius: 15px 15px 0 0;
     width: 100%;
-    height: 430px;
+    height: 75%;
 }
 
 .activites-cards .card-title {
     margin: 15px;
+    height: 25%;
 }
 
 /****** footer ***********/
@@ -423,6 +434,7 @@ footer .footer-title {
     /* hébergements et populaires cards en colonne */
     .hebergements-and-populaires {
         flex-direction: column;
+        /*gap: 0;*/
     }
 
     /* section hébergements en largeur totale */
@@ -433,17 +445,18 @@ footer .footer-title {
     /* section populaires en largeur totale */
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        /*margin-top: 50px;*/
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap:20px
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 32%;
     }
 
     .populaires-cards .card-title {
@@ -454,6 +467,7 @@ footer .footer-title {
         font-size: 13px;
     }
 }
+
 
 /***** Small devices (phones, less than 768px et more than 320px) *****/
 @media (max-width: 767.98px) and (min-width: 320px) {
@@ -555,32 +569,12 @@ footer .footer-title {
     .hebergements-cards {
         display: flex;
         flex-direction: column;
-/*        align-items: flex-start;*/
+    /*        align-items: flex-start;*/
     }
 
     .hebergements-cards .card {
         /*width: 320px;*/
         width: 100%;
-    }
-
-    .activites-cards img {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /*height: 141px;*/
-        height: 80%;
-    }
-
-    .activites {
-        justify-content: center;
-    }
-
-    .activites-cards{
-        display: flex;
-    }
-
-    .activites-cards .card {
-        /*width: 320px;*/
     }
 
     /* populaires - format large, en colonne */
@@ -599,6 +593,34 @@ footer .footer-title {
 
     .populaires-cards .card {
         width: 100%;
+    }
+
+    /* activités en colonnes */
+    .activites-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .activites-cards .card {
+        height: 200px;
+    }
+
+    .activites-cards a {
+        width: 100%;
+        }
+
+    .activites-cards img {
+        /*display: flex;
+        flex-direction: column;
+        justify-content: center;*/
+        height: 70%;
+    }
+
+    .activites-cards .card-title {
+        height: 30%;
     }
 
     /* footer en colonne */
