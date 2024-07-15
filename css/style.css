@@ -395,20 +395,21 @@ input {
 footer {
     display: flex;
     background-color: var(--main-bg-color);
-    padding: 5px 20px 5px 20px;
+    padding: 5px 0px 5px 0px;
 }
 
-footer div {
+.footer-div {
     width: 33%;
-}
-
-footer .footer-subtitle {
-    margin-bottom: 20px;
 }
 
 footer .footer-title {
     font-size: 18px;
     font-weight: 700;
+}
+
+footer li {
+    list-style: none;
+    margin-top: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -646,7 +647,7 @@ footer .footer-title {
         flex-direction: column;
     }
 
-    footer div {
+    .footer-div {
         margin-bottom: 15px;
         width: 100%;
     }
