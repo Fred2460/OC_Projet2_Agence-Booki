@@ -395,7 +395,7 @@ input {
 footer {
     display: flex;
     background-color: var(--main-bg-color);
-    padding: 5px 0px 5px 0px;
+    padding: 5px;
 }
 
 .footer-div {
@@ -410,6 +410,10 @@ footer .footer-title {
 footer li {
     list-style: none;
     margin-top: 20px;
+}
+
+footer ul {
+    padding-left: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -547,7 +551,6 @@ footer li {
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-items: center;
-        /*width: 100%;             répartition des 2 filtres sur toute la largeur de l'écran mobile */ 
     }
 
     .filtre article {
