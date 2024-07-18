@@ -557,26 +557,26 @@ footer ul {
     }
 
     input {
-        width: 100%;
+        width: 80%;
     }
 
     #m-glass {
         display: block;
-        /*padding-right: 20px;*/
-        /*margin-left: -30px;*/
     }
 
-    /* réduction police des boutons de filtre */
+    /* réduction police des boutons de filtre + 2 boutons par ligne */
     .filtre {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        place-items: center;
+        align-items: center;
+        width: 100%;
     }
 
     .filtre article {
-        font-size: 14px;
-        width: 110px;
-        gap: 10px;
+        font-size: 13px;
+        gap: 5px;
+        padding: 0 10px 0 10px;
+        justify-content: center;
     }
 
     /* mise populaires avant hébergements */ 
@@ -672,7 +672,11 @@ footer ul {
 
     .footer-div {
         margin-bottom: 15px;
-        width: 100%;
+        width: 90%;
+    }
+
+    footer ul {
+        padding-left: 25px;
     }
 }
 
